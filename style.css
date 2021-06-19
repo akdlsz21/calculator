@@ -1,0 +1,39 @@
+* {
+	font-size: 35px;
+}
+
+.container {
+	border: 1px solid orange;
+	padding: 10px;
+	width: 500px;
+	height: 680px;
+	background-color: grey;
+}
+
+.screen {
+	background-color: white;
+	border: 1px solid greenyellow;
+	height: 100px;
+	text-align: end;
+}
+
+.clear-and-delete {
+	border: 1px solid red;
+	margin: 10px 2px;
+	display: grid;
+	grid: auto-flow/ 1fr 1fr;
+}
+
+.button-grid {
+	border: 1px solid blue;
+	display: grid;
+	grid: auto-flow / 1fr 1fr 1fr 1fr;
+}
+
+.btn {
+	background-color: antiquewhite;
+	margin: 2px;
+	text-align: end;
+	border: 1px solid purple;
+	height: 100px;
+}
