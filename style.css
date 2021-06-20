@@ -11,6 +11,7 @@
 }
 
 .screen {
+	padding-top: 33px;
 	background-color: white;
 	border: 1px solid greenyellow;
 	height: 100px;
@@ -22,6 +23,12 @@
 	margin: 10px 2px;
 	display: grid;
 	grid: auto-flow/ 1fr 1fr;
+}
+.clear-btn {
+	background-color: rgb(223, 159, 159);
+}
+.delete-btn {
+	background-color: rgb(159, 187, 223);
 }
 
 .button-grid {
