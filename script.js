@@ -34,6 +34,7 @@ let button = document.querySelectorAll('.button-grid');
 let screen = document.querySelector('.screen');
 let clearBtn = document.querySelector('.clear-btn');
 let deleteBtn = document.querySelector('.delete-btn');
+
 // set a function to assign value to num1, operator, num2 in an order
 
 button.forEach((item) => {
@@ -42,6 +43,7 @@ button.forEach((item) => {
 	});
 });
 
+// logic to handle num1 and num2 with true and false value
 first = true;
 
 function getNum1(value) {
