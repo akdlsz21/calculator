@@ -41,7 +41,14 @@ button.forEach((item) => {
 	});
 });
 
+first = true;
+
 function getNum1(value) {
+	if (first) {
+		temp = num1;
+	} else {
+		temp = num2;
+	}
 	if (
 		value != '=' &&
 		value != '+' &&
@@ -49,11 +56,11 @@ function getNum1(value) {
 		value != '/' &&
 		value != '*'
 	) {
-		num1.push(parseInt(value));
-		console.log(num1);
-	} else {
-		operator += value;
-		console.log(operator);
+		temp.push(parseInt(value));
+	} else if (value == '=') 
+	else {
+		operator = value;
+		first = false;
 	}
 }
 console.log(num1);
