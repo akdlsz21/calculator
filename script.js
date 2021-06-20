@@ -43,21 +43,15 @@ button.forEach((item) => {
 
 function getNum1(value) {
 	if (
-		value != '=' ||
-		value != '+' ||
-		value != '-' ||
-		value != '/' ||
+		value != '=' &&
+		value != '+' &&
+		value != '-' &&
+		value != '/' &&
 		value != '*'
 	) {
-		num1 += value;
+		num1.push(parseInt(value));
 		console.log(num1);
-	} else if (
-		value == '=' ||
-		value == '+' ||
-		value == '-' ||
-		value == '/' ||
-		value == '*'
-	) {
+	} else {
 		operator += value;
 		console.log(operator);
 	}
